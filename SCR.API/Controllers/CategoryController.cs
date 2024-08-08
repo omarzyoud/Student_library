@@ -17,6 +17,7 @@ namespace SCR.API.Controllers
         public CategoryController(SCRDbContext dbContext)
         {
             _dbContext = dbContext;
+            //this is to test git
         }
 
         [HttpPost]
