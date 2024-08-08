@@ -1,0 +1,6 @@
+@SCR.API_HostAddress = http://localhost:5208
+
+GET {{SCR.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
