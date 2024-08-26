@@ -279,21 +279,7 @@ public class SubjectController : ControllerBase
             return StatusCode(500, "Internal server error");
         }
     }
-   /* public static IFormFile ConvertByteArrayToIFormFile(byte[] fileData, string fileName)
-    {
-        // Create a MemoryStream from the byte array
-        using (MemoryStream ms = new MemoryStream(fileData))
-        {
-            // Create a new FormFile
-            var file = new FormFile(ms, 0, ms.Length, null, fileName)
-            {
-                Headers = new HeaderDictionary(),
-                ContentType = "application/octet-stream" // Set the content type based on your file format
-            };
-
-            return file;
-        }
-    }*/
+   
     [HttpGet]
     [Route("GetMaterialBySubjectId")]
     [Authorize]
